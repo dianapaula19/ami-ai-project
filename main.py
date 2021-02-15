@@ -31,7 +31,6 @@ def k_fold_mean_score(x_train_sets, y_train_sets, x_test_sets, y_test_set, model
     plt.figure(figsize=(10, 7))
     plt.title(model)
     sn.heatmap(final_confusion_matrix, annot=True, fmt='g', linewidths=10, cmap="YlGnBu")
-    plt.show()
     plt.savefig('./plots/confusion_matrix_' + model)
 
 
