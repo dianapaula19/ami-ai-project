@@ -37,6 +37,8 @@ class Data:
             vectorizer = CountVectorizer(max_features=param[0], max_df=param[1])
         elif vec == "TFIDF":
             vectorizer = TfidfVectorizer(max_features=param[0], max_df=param[1])
+        else:
+            raise ValueError(f"Unknown vectorizer {vec!r}; expected 'COUNT' or 'TFIDF'")
 
         x_train = vectorizer.fit_transform(train)
         x_test = vectorizer.transform(test)

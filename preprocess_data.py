@@ -52,8 +52,8 @@ def only_one_unique_letter(token):
 def preprocess_tweet(tweet):
 
     tweet = tweet.lower()
-    tweet = re.sub('https://t\.co/\w+', ' ', tweet)  # removes the links
-    tweet = re.sub('\d+', '', tweet)
+    tweet = re.sub(r'https://t\.co/\w+', ' ', tweet)  # removes the links
+    tweet = re.sub(r'\d+', '', tweet)
     tweet = remove_accents(tweet)
     tweet = remove_punctuation(tweet)
     tokens = nltk.word_tokenize(tweet)
