@@ -1,5 +1,7 @@
 # Automatic misogyny identification
 
+> **Original version:** this README and some fixes were added in 2026. To see the project exactly as it was first built, browse commit [`3e975f2`](https://github.com/dianapaula19/ami-ai-project/tree/3e975f2497416e278c03804dabd09a613fc2561c) (2021-02-15).
+
 Kaggle competition (University of Bucharest, 2020): classify Italian tweets as misogynous or not. 5,000 labelled tweets for training, 1,000
 unlabelled tweets to predict.
 
